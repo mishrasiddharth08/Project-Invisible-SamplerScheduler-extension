@@ -1,0 +1,118 @@
+PROJECT INVISIBLE - SamplerScheduler
+Third-party components and their licences
+================================================================================
+
+This extension contains no new sampler mathematics. Every implementation is a
+merged or ported copy of existing work. This file records what came from where,
+so the provenance of any line can be traced back to its upstream.
+
+The combined work is distributed under AGPL-3.0 with the additional RES4LYF
+restriction reproduced in LICENSE. Where a component's own licence is more
+permissive (MIT, Apache-2.0), that permissive licence still governs that
+component taken on its own.
+
+--------------------------------------------------------------------------------
+1. RES4LYF                                    AGPL-3.0 + non-commercial-service
+--------------------------------------------------------------------------------
+   Upstream : https://github.com/ClownsharkBatwing/RES4LYF
+   Via      : https://github.com/Haoming02/sd-webui-forge-classic (neo) port
+   Files    : lib/wrappers/res4lyf/**
+              lib/wrappers/res4lyf_bridge.py
+   Provides : RES 2M/3M/2S/3S/5S/6S, their ODE variants, DEIS 2M/3M and ODE
+              variants (16 samplers), the Tan and Beta57 schedules, and the DEIS
+              coefficient tables reused by the ported DEIS sampler.
+
+   THIS COMPONENT CARRIES THE COMMERCIAL-SERVICE RESTRICTION. It is the reason
+   LICENSE opens with that rider. See LICENSE for the exact wording and for how
+   to build without it.
+
+   Modified here: lib/wrappers/res4lyf/_compat.py. The upstream shim replaced
+   the whole `comfy` module in sys.modules; this version adopts the host's
+   vendored `comfy` package and only fills in absent submodules, so it no longer
+   shadows Forge's LoRA and ControlNet helpers.
+
+--------------------------------------------------------------------------------
+2. ComfyUI                                                            GPL-3.0
+--------------------------------------------------------------------------------
+   Upstream : https://github.com/comfyanonymous/ComfyUI
+   File     : lib/wrappers/comfy_ported.py
+   Provides : iPNDM, iPNDM V, DEIS, DDPM, Heun++2, DPM2 a, DPM fast,
+              DPM adaptive, and the DPMSolver / PIDStepSizeController machinery.
+   Also     : lib/comfy_sync.py reads SAMPLER_NAMES / KSAMPLER_NAMES /
+              SCHEDULER_NAMES from comfy/samplers.py over the network. It parses
+              text only; no downloaded code is imported or executed.
+
+   The maths is verbatim. Four host-API adaptations are documented in that
+   file's header.
+
+   Sub-components inside comfy_ported.py that carry their own, more permissive
+   upstream licences:
+
+     * iPNDM / iPNDM_v / DEIS ....... Apache-2.0
+       https://github.com/zju-pi/diff-sampler
+     * Heun++2 ...................... MIT
+       https://github.com/Carzit/sd-webui-samplers-scheduler
+     * DPMSolver, dpm_fast,
+       dpm_adaptive ................. MIT
+       https://github.com/crowsonkb/k-diffusion
+
+--------------------------------------------------------------------------------
+3. sd_forge_neo_extra_samplers
+--------------------------------------------------------------------------------
+   Upstream : https://github.com/Panchovix/sd_forge_neo_extra_samplers
+   Files    : lib/wrappers/extra_samplers.py
+              lib/wrappers/sa_solver.py
+   Provides : Gradient Estimation (+CFG++), SEEDS 2, SEEDS 3, SA Solver,
+              SA Solver PECE, DPM++ SDE CFG++, EXP Heun 2 x0 (+SDE),
+              Res Multistep CFG++, Res Multistep A (+CFG++), Euler A2.
+
+   Modified here: the trailing registration block was removed (registration is
+   centralised in lib/register.py) and `import scripts.sa_solver` became a
+   relative import, because the bare top-level name `scripts` collides across
+   extensions.
+
+--------------------------------------------------------------------------------
+4. webUI_ExtraSchedulers
+--------------------------------------------------------------------------------
+   Upstream : https://github.com/DenOfEquity/webUI_ExtraSchedulers
+   Files    : lib/wrappers/res_solver.py
+              lib/wrappers/samplers_cfgpp.py
+              lib/wrappers/clyb_4m_sde.py
+              lib/wrappers/schedulers.py  (scheduler half)
+   Provides : Refined Exponential Solver, DPM++ 4M SDE, the Euler CFG++ family,
+              and the Cosine / CosineExponential / Phi / Laplace / Karras
+              Dynamic / Custom schedules.
+
+   Within those files:
+     * DPM++ 4M SDE ................. Clybius
+       https://github.com/Clybius/ComfyUI-Extra-Samplers
+     * Phi scheduler ................ @extraltodeus
+
+   Modified here: the `custom` schedule's expression moved from a visible
+   textbox to a Forge Settings entry, and its eval now runs against a fixed
+   maths whitelist with no builtins.
+
+--------------------------------------------------------------------------------
+5. sd-forge-extra-samplers / forge-beta57-scheduler
+--------------------------------------------------------------------------------
+   https://github.com/MisterChief95/sd-forge-extra-samplers
+   https://github.com/cyberdeliaAI/forge-beta57-scheduler
+
+   Consulted as reference implementations while classifying candidates. Beta57
+   ships here via the RES4LYF port (component 1) rather than as a separate copy.
+
+--------------------------------------------------------------------------------
+6. Host: sd-webui-forge-classic (Neo)                                AGPL-3.0
+--------------------------------------------------------------------------------
+   https://github.com/Haoming02/sd-webui-forge-classic  (branch: neo)
+
+   Not redistributed. This extension imports the host's k-diffusion, its
+   SamplerData / Scheduler constructors, and its registration APIs at runtime.
+   It vendors no second copy of k-diffusion and modifies no host file.
+
+================================================================================
+If you are an upstream author and want attribution changed, corrected, or your
+code removed, open an issue and it will be handled promptly.
+
+1.1.0 additions: lib/wrappers/comfy_latest.py uses ComfyUI 1d48d9cf7bcecb6022a87b3cb13e0fb435bf9b8a
+(GPL-3.0). Host adaptations and retained coefficients are described in docs/UPSTREAM.md.

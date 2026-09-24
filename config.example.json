@@ -1,0 +1,12 @@
+{
+  "denylist": {
+    "samplers": [],
+    "schedulers": []
+  },
+  "comfy_sync": {
+    "enabled": true,
+    "interval_hours": 168,
+    "network_timeout_seconds": 10
+  },
+  "custom_sigmas": "m + (M-m)*(1-x)**3"
+}

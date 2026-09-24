@@ -1,0 +1,1886 @@
+{
+  "added_samplers": [
+    "Gradient Estimation",
+    "Gradient Estimation CFG++",
+    "SEEDS 2",
+    "SEEDS 3",
+    "SA Solver",
+    "SA Solver PECE",
+    "DPM++ SDE CFG++",
+    "EXP Heun 2 x0",
+    "EXP Heun 2 x0 SDE",
+    "Res Multistep CFG++",
+    "Res Multistep A",
+    "Res Multistep A CFG++",
+    "Euler A2",
+    "Refined Exponential Solver",
+    "DPM++ 4M SDE",
+    "Euler Dy CFG++",
+    "Euler SMEA Dy CFG++",
+    "iPNDM",
+    "iPNDM V",
+    "DEIS",
+    "DDPM",
+    "Heun++2",
+    "DPM2 a",
+    "DPM fast",
+    "DPM adaptive",
+    "DPM++ 2M SDE Heun",
+    "DPM++ 2S a",
+    "DPM++ 2S a CFG++",
+    "CFG++ UD10 AB",
+    "UniPC BH2",
+    "RES 2M (RES4LYF)",
+    "RES 3M (RES4LYF)",
+    "RES 2S (RES4LYF)",
+    "RES 3S (RES4LYF)",
+    "RES 5S (RES4LYF)",
+    "RES 6S (RES4LYF)",
+    "RES 2M ODE (RES4LYF)",
+    "RES 3M ODE (RES4LYF)",
+    "RES 2S ODE (RES4LYF)",
+    "RES 3S ODE (RES4LYF)",
+    "RES 5S ODE (RES4LYF)",
+    "RES 6S ODE (RES4LYF)",
+    "DEIS 2M (RES4LYF)",
+    "DEIS 3M (RES4LYF)",
+    "DEIS 2M ODE (RES4LYF)",
+    "DEIS 3M ODE (RES4LYF)"
+  ],
+  "added_schedulers": [
+    "cosine",
+    "cosexp",
+    "phi",
+    "laplace",
+    "karras_dyn",
+    "custom",
+    "tan",
+    "beta57"
+  ],
+  "cases": [
+    {
+      "name": "Gradient Estimation",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 2",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 3",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver PECE",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ SDE CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0 SDE",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler A2",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Refined Exponential Solver",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 4M SDE",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler Dy CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler SMEA Dy CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM V",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DDPM",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Heun++2",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM2 a",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM fast",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM adaptive",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2M SDE Heun",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a CFG++",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "CFG++ UD10 AB",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "UniPC BH2",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 2",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 3",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver PECE",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ SDE CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0 SDE",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler A2",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Refined Exponential Solver",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 4M SDE",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler Dy CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler SMEA Dy CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM V",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DDPM",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Heun++2",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM2 a",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM fast",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM adaptive",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2M SDE Heun",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a CFG++",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "CFG++ UD10 AB",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "UniPC BH2",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M ODE (RES4LYF)",
+      "device": "cpu",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 2",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 3",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver PECE",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ SDE CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0 SDE",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler A2",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Refined Exponential Solver",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 4M SDE",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler Dy CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Euler SMEA Dy CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM V",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DDPM",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Heun++2",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM2 a",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM fast",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM adaptive",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2M SDE Heun",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a CFG++",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "CFG++ UD10 AB",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "UniPC BH2",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "epsilon",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Gradient Estimation CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 2",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SEEDS 3",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "SA Solver PECE",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ SDE CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "EXP Heun 2 x0 SDE",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Res Multistep A CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler A2",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Refined Exponential Solver",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 4M SDE",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler Dy CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Euler SMEA Dy CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "iPNDM V",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DDPM",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Heun++2",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM2 a",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM fast",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM adaptive",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2M SDE Heun",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DPM++ 2S a CFG++",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "CFG++ UD10 AB",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "UniPC BH2",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 2S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 3S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 5S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "RES 6S ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 2M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "DEIS 3M ODE (RES4LYF)",
+      "device": "cuda",
+      "prediction": "const",
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Cosine",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "CosineExponential blend",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Phi",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Laplace",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Karras Dynamic",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Custom",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Tan",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 1,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 1,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 2,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 2,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 5,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 5,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 20,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 20,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 100,
+      "range": [
+        0.02,
+        3.0
+      ],
+      "status": "pass"
+    },
+    {
+      "name": "Beta57",
+      "n": 100,
+      "range": [
+        0.002,
+        0.95
+      ],
+      "status": "pass"
+    }
+  ]
+}

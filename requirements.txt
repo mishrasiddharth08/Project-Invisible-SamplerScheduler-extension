@@ -1,0 +1,16 @@
+# PROJECT INVISIBLE - SamplerScheduler
+#
+# INTENTIONALLY EMPTY OF PACKAGES.
+#
+# This engine registers samplers and schedulers into Forge Neo's existing
+# dropdowns. It adds no model, no weights, and no new dependency: everything
+# the merged samplers import already ships inside the Forge Neo venv --
+#
+#   torch, numpy, scipy, torchsde, tqdm      (Forge requirements.txt)
+#   k_diffusion                              (modules_forge/packages/k_diffusion)
+#   comfy                                    (modules_forge/packages/comfy)
+#
+# install.py probes for these and reports anything missing. It never runs pip,
+# never downloads, and never creates a second venv. Do not add packages here:
+# a pip call from this file would defeat the "no second stack" rule the engine
+# is built around.

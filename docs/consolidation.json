@@ -1,0 +1,182 @@
+{
+  "consolidated_at": "2026-09-11",
+  "version": "1.1.0",
+  "folders": {
+    "sd_forge_neo_extra_samplers": {
+      "path": "extensions/sd_forge_neo_extra_samplers",
+      "files": [
+        {
+          "source": "scripts/extra_samplers.py",
+          "merged_to": "lib/wrappers/extra_samplers.py",
+          "source_sha256": "b08ab9b8658f35f0f1a0b37b8bb0f43008cf424164ed23c8519ab76188080cae",
+          "merged_sha256": "88a260f3130b846e7a8ecc0c56062763b33e063ef32732e5a6570dfc62c3be51",
+          "modified_during_merge": true
+        },
+        {
+          "source": "scripts/sa_solver.py",
+          "merged_to": "lib/wrappers/sa_solver.py",
+          "source_sha256": "b513e61d1a766aba58ca1726e1096b2405290438d22059e116a154ec1e16d3dd",
+          "merged_sha256": "b513e61d1a766aba58ca1726e1096b2405290438d22059e116a154ec1e16d3dd",
+          "modified_during_merge": false
+        }
+      ]
+    },
+    "webUI_ExtraSchedulers": {
+      "path": "extensions/webUI_ExtraSchedulers",
+      "files": [
+        {
+          "source": "scripts/res_solver.py",
+          "merged_to": "lib/wrappers/res_solver.py",
+          "source_sha256": "7af98e926b033289f25f44dd9e5dc5096cba2d6aee20d63c43c1378b8cc5bfaf",
+          "merged_sha256": "7af98e926b033289f25f44dd9e5dc5096cba2d6aee20d63c43c1378b8cc5bfaf",
+          "modified_during_merge": false
+        },
+        {
+          "source": "scripts/samplers_cfgpp.py",
+          "merged_to": "lib/wrappers/samplers_cfgpp.py",
+          "source_sha256": "dc2696e858a9244a76944059b419fe8c4150f8c23d2685dd3d933334fd0b1c80",
+          "merged_sha256": "1ff6ef03b354900f79a6bad855833307e46f2ec0a7280c3c0c4ec014a7a62754",
+          "modified_during_merge": true
+        },
+        {
+          "source": "scripts/clybius_dpmpp_4m_sde.py",
+          "merged_to": "lib/wrappers/clyb_4m_sde.py",
+          "source_sha256": "7da7dcdd943304a0fb55c49c97a99593991f3d401d11421bae4a6e9916112d82",
+          "merged_sha256": "7da7dcdd943304a0fb55c49c97a99593991f3d401d11421bae4a6e9916112d82",
+          "modified_during_merge": false
+        },
+        {
+          "source": "scripts/extra_schedulers.py",
+          "merged_to": "lib/wrappers/schedulers.py",
+          "source_sha256": "b0add4fc7b5d7b11843711df8839974a51521b636d30a82ae51597341cb414ee",
+          "merged_sha256": "7886672c4bb33b8c0ac636ede38e95f8fc4b7ce32861c1997021040e135044cd",
+          "modified_during_merge": true
+        }
+      ]
+    },
+    "sd-forge-res4lyf": {
+      "path": "extensions/sd-forge-res4lyf",
+      "files": [
+        {
+          "source": "lib_res4lyf/beta/rk_sampler_beta.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/rk_sampler_beta.py",
+          "source_sha256": "01f163659acbd3b8f8462c8eedf16dc2d2aa1cd4d06bac8de0d83063b19020ae",
+          "merged_sha256": "01f163659acbd3b8f8462c8eedf16dc2d2aa1cd4d06bac8de0d83063b19020ae",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/rk_method_beta.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/rk_method_beta.py",
+          "source_sha256": "ba003846233b5ea09e7ac227ed7a726abd58d7116b3f9921ffd305a4b0dda3f3",
+          "merged_sha256": "ba003846233b5ea09e7ac227ed7a726abd58d7116b3f9921ffd305a4b0dda3f3",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/rk_coefficients_beta.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/rk_coefficients_beta.py",
+          "source_sha256": "081bc02aa1b992706f71680e1183aed6c275fb2e10a441c39943c463a9cec7c4",
+          "merged_sha256": "081bc02aa1b992706f71680e1183aed6c275fb2e10a441c39943c463a9cec7c4",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/rk_guide_func_beta.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/rk_guide_func_beta.py",
+          "source_sha256": "e197b4b9a163ff5b18f234e60d8f48d67164d60ee40e5453fd5641064019f2f4",
+          "merged_sha256": "e197b4b9a163ff5b18f234e60d8f48d67164d60ee40e5453fd5641064019f2f4",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/rk_noise_sampler_beta.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/rk_noise_sampler_beta.py",
+          "source_sha256": "bb2bfe2357197b3a55d493b7c48fe055b41249b19bc24eb53e89ae76d70c4076",
+          "merged_sha256": "bb2bfe2357197b3a55d493b7c48fe055b41249b19bc24eb53e89ae76d70c4076",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/noise_classes.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/noise_classes.py",
+          "source_sha256": "41e8e68f5498bcd3540fd2f8ecfb358a63bb9561db63a6f9cdd82c36c1b9979d",
+          "merged_sha256": "41e8e68f5498bcd3540fd2f8ecfb358a63bb9561db63a6f9cdd82c36c1b9979d",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/phi_functions.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/phi_functions.py",
+          "source_sha256": "1bcb658ddc093f8de1a76c903cb684bd2a0cc8d663def871fbf5fe2f5445aa1a",
+          "merged_sha256": "1bcb658ddc093f8de1a76c903cb684bd2a0cc8d663def871fbf5fe2f5445aa1a",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/deis_coefficients.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/deis_coefficients.py",
+          "source_sha256": "5fe0a6dc83726b1589c539398a595c9f2f660e5d01f926ac8e24109dd495006c",
+          "merged_sha256": "5fe0a6dc83726b1589c539398a595c9f2f660e5d01f926ac8e24109dd495006c",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/beta/constants.py",
+          "merged_to": "lib/wrappers/res4lyf/beta/constants.py",
+          "source_sha256": "75991a0b121cc973b9c3a0a89a4185d26e6eaaf2e7a645f610ba55ff4ef607d1",
+          "merged_sha256": "75991a0b121cc973b9c3a0a89a4185d26e6eaaf2e7a645f610ba55ff4ef607d1",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/helper.py",
+          "merged_to": "lib/wrappers/res4lyf/helper.py",
+          "source_sha256": "a4d4b0179099bb1e7925f2d252d5ff6540b154d96e7911f92664c747c214dedb",
+          "merged_sha256": "a4d4b0179099bb1e7925f2d252d5ff6540b154d96e7911f92664c747c214dedb",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/latents.py",
+          "merged_to": "lib/wrappers/res4lyf/latents.py",
+          "source_sha256": "8b2e6f965a278aca7a4e26d9f81613dd97ced1db956630efd28be9488f12c2f3",
+          "merged_sha256": "8b2e6f965a278aca7a4e26d9f81613dd97ced1db956630efd28be9488f12c2f3",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/models.py",
+          "merged_to": "lib/wrappers/res4lyf/models.py",
+          "source_sha256": "538e3e8ede453d50b9554bf60dceddfdec254ee0828ecf4828a774919fcca0b8",
+          "merged_sha256": "538e3e8ede453d50b9554bf60dceddfdec254ee0828ecf4828a774919fcca0b8",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/sigmas.py",
+          "merged_to": "lib/wrappers/res4lyf/sigmas.py",
+          "source_sha256": "0e7ad6842ed30e9005ed714f2e628d0babee060d4aa26216e49c61b5a485d666",
+          "merged_sha256": "0e7ad6842ed30e9005ed714f2e628d0babee060d4aa26216e49c61b5a485d666",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/style_transfer.py",
+          "merged_to": "lib/wrappers/res4lyf/style_transfer.py",
+          "source_sha256": "e0ecb04038140ccc441d97e6cf640dcc3978d5fc7581e9efbd36dfe054083016",
+          "merged_sha256": "e0ecb04038140ccc441d97e6cf640dcc3978d5fc7581e9efbd36dfe054083016",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/res4lyf.py",
+          "merged_to": "lib/wrappers/res4lyf/res4lyf.py",
+          "source_sha256": "89803752f87fc53e8e49be003ae79b1ba5dced2ec08040d8ef443afbaaa6ada1",
+          "merged_sha256": "89803752f87fc53e8e49be003ae79b1ba5dced2ec08040d8ef443afbaaa6ada1",
+          "modified_during_merge": false
+        },
+        {
+          "source": "lib_res4lyf/_compat.py",
+          "merged_to": "lib/wrappers/res4lyf/_compat.py",
+          "source_sha256": "caa4f249c3f99e0c8f5e3ffe52b6006bf9142c111ec982d14688c17caf6edb21",
+          "merged_sha256": "757d47645205c3b02bf6940252d28351fe768e5373ecf903f605b44d05f21b13",
+          "modified_during_merge": true
+        },
+        {
+          "source": "scripts/forge_res4lyf.py",
+          "merged_to": "lib/wrappers/res4lyf_bridge.py",
+          "source_sha256": "c310e646b09865ee236d8aacafe56d8392ddf662974b4364bb0f780a710e9de6",
+          "merged_sha256": "f270853daf462a374723be8b5d100eedd1fac0371ed66b5718354d76be55b425",
+          "modified_during_merge": true
+        }
+      ]
+    }
+  }
+}

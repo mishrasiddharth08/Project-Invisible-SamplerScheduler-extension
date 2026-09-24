@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-09-11",
+  "repository": "https://github.com/Comfy-Org/ComfyUI",
+  "sha": "1d48d9cf7bcecb6022a87b3cb13e0fb435bf9b8a",
+  "files": {
+    "comfy-comfy-samplers.py": "f2c264ca9d394612f828e3ffe167c856a278a10e1711b269f0ba65dccb66393f",
+    "comfy-comfy-k_diffusion-sampling.py": "cfc4221ed0bc1f84a6f5689d3ec440cad3008c2541ab8f5e2599d1a73fac74ce"
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "remote": {
+    "KSAMPLER_NAMES": [
+      "euler",
+      "euler_cfg_pp",
+      "euler_ancestral",
+      "euler_ancestral_cfg_pp",
+      "heun",
+      "heunpp2",
+      "exp_heun_2_x0",
+      "exp_heun_2_x0_sde",
+      "dpm_2",
+      "dpm_2_ancestral",
+      "lms",
+      "dpm_fast",
+      "dpm_adaptive",
+      "dpmpp_2s_ancestral",
+      "dpmpp_2s_ancestral_cfg_pp",
+      "dpmpp_sde",
+      "dpmpp_sde_gpu",
+      "dpmpp_2m",
+      "dpmpp_2m_cfg_pp",
+      "dpmpp_2m_sde",
+      "dpmpp_2m_sde_gpu",
+      "dpmpp_2m_sde_heun",
+      "dpmpp_2m_sde_heun_gpu",
+      "dpmpp_3m_sde",
+      "dpmpp_3m_sde_gpu",
+      "ddpm",
+      "lcm",
+      "ipndm",
+      "ipndm_v",
+      "deis",
+      "cfgpp_ud10_ab",
+      "res_multistep",
+      "res_multistep_cfg_pp",
+      "res_multistep_ancestral",
+      "res_multistep_ancestral_cfg_pp",
+      "gradient_estimation",
+      "gradient_estimation_cfg_pp",
+      "er_sde",
+      "seeds_2",
+      "seeds_3",
+      "sa_solver",
+      "sa_solver_pece"
+    ],
+    "SAMPLER_NAMES": [
+      "euler",
+      "euler_cfg_pp",
+      "euler_ancestral",
+      "euler_ancestral_cfg_pp",
+      "heun",
+      "heunpp2",
+      "exp_heun_2_x0",
+      "exp_heun_2_x0_sde",
+      "dpm_2",
+      "dpm_2_ancestral",
+      "lms",
+      "dpm_fast",
+      "dpm_adaptive",
+      "dpmpp_2s_ancestral",
+      "dpmpp_2s_ancestral_cfg_pp",
+      "dpmpp_sde",
+      "dpmpp_sde_gpu",
+      "dpmpp_2m",
+      "dpmpp_2m_cfg_pp",
+      "dpmpp_2m_sde",
+      "dpmpp_2m_sde_gpu",
+      "dpmpp_2m_sde_heun",
+      "dpmpp_2m_sde_heun_gpu",
+      "dpmpp_3m_sde",
+      "dpmpp_3m_sde_gpu",
+      "ddpm",
+      "lcm",
+      "ipndm",
+      "ipndm_v",
+      "deis",
+      "cfgpp_ud10_ab",
+      "res_multistep",
+      "res_multistep_cfg_pp",
+      "res_multistep_ancestral",
+      "res_multistep_ancestral_cfg_pp",
+      "gradient_estimation",
+      "gradient_estimation_cfg_pp",
+      "er_sde",
+      "seeds_2",
+      "seeds_3",
+      "sa_solver",
+      "sa_solver_pece",
+      "ddim",
+      "uni_pc",
+      "uni_pc_bh2"
+    ],
+    "SCHEDULER_NAMES": [
+      "simple",
+      "sgm_uniform",
+      "karras",
+      "exponential",
+      "ddim_uniform",
+      "beta",
+      "normal",
+      "linear_quadratic",
+      "kl_optimal"
+    ]
+  },
+  "coverage": {
+    "already_registered": [
+      {
+        "name": "euler",
+        "label": "Euler",
+        "func": "sample_euler",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "euler_cfg_pp",
+        "label": "Euler CFG++",
+        "func": "sample_euler_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "euler_ancestral",
+        "label": "Euler a",
+        "func": "sample_euler_ancestral",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "euler_ancestral_cfg_pp",
+        "label": "Euler a CFG++",
+        "func": "sample_euler_ancestral_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "heun",
+        "label": "Heun",
+        "func": "sample_heun",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "heunpp2",
+        "label": "Heunpp2",
+        "func": "sample_heunpp2",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "exp_heun_2_x0",
+        "label": "Exp Heun 2 x0",
+        "func": "sample_exp_heun_2_x0",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "exp_heun_2_x0_sde",
+        "label": "Exp Heun 2 x0 SDE",
+        "func": "sample_exp_heun_2_x0_sde",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpm_2",
+        "label": "Dpm 2",
+        "func": "sample_dpm_2",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpm_2_ancestral",
+        "label": "Dpm 2 a",
+        "func": "sample_dpm_2_ancestral",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "lms",
+        "label": "LMS",
+        "func": "sample_lms",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpm_fast",
+        "label": "Dpm Fast",
+        "func": "sample_dpm_fast",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpm_adaptive",
+        "label": "Dpm Adaptive",
+        "func": "sample_dpm_adaptive",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2s_ancestral",
+        "label": "DPM++ 2S a",
+        "func": "sample_dpmpp_2s_ancestral",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2s_ancestral_cfg_pp",
+        "label": "DPM++ 2S a CFG++",
+        "func": "sample_dpmpp_2s_ancestral_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_sde",
+        "label": "DPM++ SDE",
+        "func": "sample_dpmpp_sde",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2m",
+        "label": "DPM++ 2M",
+        "func": "sample_dpmpp_2m",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2m_cfg_pp",
+        "label": "DPM++ 2M CFG++",
+        "func": "sample_dpmpp_2m_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2m_sde",
+        "label": "DPM++ 2M SDE",
+        "func": "sample_dpmpp_2m_sde",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_2m_sde_heun",
+        "label": "DPM++ 2M SDE Heun",
+        "func": "sample_dpmpp_2m_sde_heun",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "dpmpp_3m_sde",
+        "label": "DPM++ 3M SDE",
+        "func": "sample_dpmpp_3m_sde",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "ddpm",
+        "label": "DDPM",
+        "func": "sample_ddpm",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "lcm",
+        "label": "LCM",
+        "func": "sample_lcm",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "ipndm",
+        "label": "iPNDM",
+        "func": "sample_ipndm",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "ipndm_v",
+        "label": "iPNDM V",
+        "func": "sample_ipndm_v",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "deis",
+        "label": "DEIS",
+        "func": "sample_deis",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "cfgpp_ud10_ab",
+        "label": "CFG++ Ud10 Ab",
+        "func": "sample_cfgpp_ud10_ab",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "res_multistep",
+        "label": "Res Multistep",
+        "func": "sample_res_multistep",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "res_multistep_cfg_pp",
+        "label": "Res Multistep CFG++",
+        "func": "sample_res_multistep_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "res_multistep_ancestral",
+        "label": "Res Multistep a",
+        "func": "sample_res_multistep_ancestral",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "res_multistep_ancestral_cfg_pp",
+        "label": "Res Multistep a CFG++",
+        "func": "sample_res_multistep_ancestral_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "gradient_estimation",
+        "label": "Gradient Estimation",
+        "func": "sample_gradient_estimation",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "gradient_estimation_cfg_pp",
+        "label": "Gradient Estimation CFG++",
+        "func": "sample_gradient_estimation_cfg_pp",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "er_sde",
+        "label": "ER SDE",
+        "func": "sample_er_sde",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "seeds_2",
+        "label": "Seeds 2",
+        "func": "sample_seeds_2",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "seeds_3",
+        "label": "Seeds 3",
+        "func": "sample_seeds_3",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "sa_solver",
+        "label": "SA Solver",
+        "func": "sample_sa_solver",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "sa_solver_pece",
+        "label": "SA Solver Pece",
+        "func": "sample_sa_solver_pece",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      },
+      {
+        "name": "uni_pc_bh2",
+        "label": "Uni Pc Bh2",
+        "func": "sample_uni_pc_bh2",
+        "reason": "already registered in this Forge tree (same k-diffusion function)"
+      }
+    ],
+    "resolvable": [],
+    "needs_port": [],
+    "skipped": [
+      {
+        "name": "dpmpp_sde_gpu",
+        "label": "DPM++ SDE GPU",
+        "func": "sample_dpmpp_sde_gpu",
+        "reason": "generic (CPU-noise) twin is sufficient; GPU twin skipped"
+      },
+      {
+        "name": "dpmpp_2m_sde_gpu",
+        "label": "DPM++ 2M SDE GPU",
+        "func": "sample_dpmpp_2m_sde_gpu",
+        "reason": "generic (CPU-noise) twin is sufficient; GPU twin skipped"
+      },
+      {
+        "name": "dpmpp_2m_sde_heun_gpu",
+        "label": "DPM++ 2M SDE Heun GPU",
+        "func": "sample_dpmpp_2m_sde_heun_gpu",
+        "reason": "generic (CPU-noise) twin is sufficient; GPU twin skipped"
+      },
+      {
+        "name": "dpmpp_3m_sde_gpu",
+        "label": "DPM++ 3M SDE GPU",
+        "func": "sample_dpmpp_3m_sde_gpu",
+        "reason": "generic (CPU-noise) twin is sufficient; GPU twin skipped"
+      },
+      {
+        "name": "ddim",
+        "label": "DDIM",
+        "func": "sample_ddim",
+        "reason": "excluded: Forge Neo handles this trunk internally"
+      },
+      {
+        "name": "uni_pc",
+        "label": "Uni Pc",
+        "func": "sample_uni_pc",
+        "reason": "excluded: Forge Neo handles this trunk internally"
+      }
+    ],
+    "schedulers_needing_port": []
+  }
+}
