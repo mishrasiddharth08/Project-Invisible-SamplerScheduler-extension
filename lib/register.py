@@ -255,6 +255,25 @@ def sampler_candidates() -> list[Candidate]:
         loader = _lazy(fn) if "." in fn else lambda fn=fn: fn
         out.append(Candidate(label, fn.rsplit(".", 1)[-1], loader, aliases, options, extra, "ComfyUI reviewed 2026-09-11"))
 
+    # --- ported from envy-ai/ComfyUI-DPMpp-2M-Sharp -----------------------
+    # DPM++ 2M with adjustable denoised-history sharpening, aimed at Qwen
+    # Image 2.1. The _sharp names take a "sharpness" extra param; the two
+    # plain RES _nc variants keep their upstream no-sharpening signatures.
+    src = "envy-ai/ComfyUI-DPMpp-2M-Sharp (ported)"
+    for label, fn, aliases, extra in (
+        ("DPM++ 2M Sharp", "dpmpp_sharp.sample_dpmpp_2m_sharp", ["dpmpp_2m_sharp"], ["sharpness"]),
+        ("DPM++ 2M SDE GPU Sharp", "dpmpp_sharp.sample_dpmpp_2m_sde_gpu_sharp", ["dpmpp_2m_sde_gpu_sharp"], ["eta", "s_noise", "sharpness"]),
+        ("SEEDS 2 Sharp", "dpmpp_sharp.sample_seeds_2_sharp", ["seeds_2_sharp"], ["eta", "s_noise", "sharpness"]),
+        ("RES 2S NC", "dpmpp_sharp.sample_res_2s_nc", ["res_2s_nc"], None),
+        ("RES 2M NC", "dpmpp_sharp.sample_res_2m_nc", ["res_2m_nc"], None),
+        ("RES 2S NC Sharp", "dpmpp_sharp.sample_res_2s_nc_sharp", ["res_2s_nc_sharp"], ["sharpness"]),
+        ("RES 2M NC Sharp", "dpmpp_sharp.sample_res_2m_nc_sharp", ["res_2m_nc_sharp"], ["sharpness"]),
+    ):
+        # The RES trunks manage their own noise internally and Forge's SDE
+        # plumbing would pass kwargs these wrappers do not consume.
+        options = {"scheduler": "beta"} if fn.startswith("dpmpp_sharp.sample_res") else {}
+        out.append(Candidate(label, fn.split(".", 1)[1], _lazy(fn), list(aliases), options, extra, src, None))
+
     # --- merged from sd-forge-res4lyf (ClownsharkBatwing port) -----------
     src = "sd-forge-res4lyf"
     try:

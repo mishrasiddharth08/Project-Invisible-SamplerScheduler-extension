@@ -1,6 +1,15 @@
 # Changelog
 
-## 1.1.0 � 2026-09-11
+## 1.2.0 — 2026-10-04
+
+- Integrated the DPM++ 2M Sharp family from envy-ai/ComfyUI-DPMpp-2M-Sharp:
+  DPM++ 2M Sharp, DPM++ 2M SDE GPU Sharp, SEEDS 2 Sharp, RES 2S/2M NC and
+  their Sharp variants (7 new samplers, plus the `sharpness` extra param).
+- Host-API adaptations documented in lib/wrappers/dpmpp_sharp.py; provenance
+  recorded in NOTICE.
+- README updated with the new entries and tuning guidance.
+
+## 1.1.0 — 2026-09-11
 
 - Consolidated the three source extensions under one invisible Forge extension.
 - Added reviewed CFG++ UD10 AB, DPM++ 2S a CFG++ and UniPC BH2 entries.

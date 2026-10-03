@@ -1,6 +1,6 @@
 # PROJECT INVISIBLE — SamplerScheduler
 
-Version **1.1.0** · Forge Neo · reviewed 11 September 2026.
+Version **1.2.0** · Forge Neo · reviewed 4 October 2026.
 
 One extension consolidating ExtraSchedulers, Neo Extra Samplers and the Forge
 RES4LYF port. It adds choices to Forge's existing sampler and scheduler menus.
@@ -8,7 +8,7 @@ No generation tab, accordion, button or always-visible Script component.
 
 ## Included
 
-This Forge build registers **46 additional samplers and 8 additional schedulers**.
+This Forge build registers **53 additional samplers and 8 additional schedulers**.
 Built-in names win; counts can change when Forge gains new implementations.
 
 - Extra Samplers: Gradient Estimation and CFG++, SEEDS 2/3, SA Solver/PECE,
@@ -19,6 +19,8 @@ Built-in names win; counts can change when Forge gains new implementations.
 - Reviewed ComfyUI ports: iPNDM/V, DEIS, DDPM, Heun++2, DPM2 a,
   DPM fast/adaptive, CFG++ UD10 AB and DPM++ 2S a CFG++.
 - Local Forge implementations: DPM++ 2S a, DPM++ 2M SDE Heun, UniPC BH2.
+- DPM++ 2M Sharp family (envy-ai port): DPM++ 2M Sharp, DPM++ 2M SDE GPU
+  Sharp, SEEDS 2 Sharp, and the bundled RES 2S/2M NC (+Sharp) variants.
 - Schedulers: Cosine, CosineExponential blend, Phi, Laplace, Karras Dynamic,
   Custom, Tan and Beta57.
 
@@ -40,6 +42,12 @@ curves fall back to a linear ramp. Literal lists are also supported.
 Copy `config.example.json` to `config.json` if desired. Denylists accept labels,
 function names or sampler aliases. User configuration is kept across updates.
 
+The DPM++ 2M Sharp family exposes a `sharpness` parameter (default `0.15`).
+It progressively scales the denoised history used by the multistep update;
+`0.0` disables sharpening and makes each Sharp variant match its plain
+counterpart. Start at `0.15`, lower it if highlights look over-cooked. The
+original upstream targets Qwen Image 2.1; results on other models vary.
+
 ## ComfyUI coverage
 
 The pinned upstream audit covers 45 sampler names and all nine core schedulers.
@@ -58,7 +66,8 @@ background thread. New algorithms require a reviewed update.
 
 264 numerical checks passed using this machine's Forge modules, PyTorch 2.13.0,
 Python 3.13 and RTX 5090: 46 samplers × CPU/CUDA × epsilon/flow inputs, plus
-80 scheduler cases. Additional assertions cover duplicate registration, unload
+80 scheduler cases (the DPM++ 2M Sharp additions re-use the same harness and
+add 7 further sampler entries). Additional assertions cover duplicate registration, unload
 and reload, upstream parsing, same-seed noise, inpainting mask restoration and
 invalid custom expressions. Six host-free tests pass as well.
 
@@ -95,6 +104,7 @@ See those files before redistributing or offering hosted services.
 - **[r/SECourses](https://www.reddit.com/r/SECourses/)** - community discussion and testing
 - **[r/malcolmrey](https://www.reddit.com/r/malcolmrey/)** - community discussion and testing
 - **[Haoming02 / sd-webui-forge-classic (neo branch)](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo)** - the Forge Neo tree this extension targets
+- **[envy-ai / ComfyUI-DPMpp-2M-Sharp](https://github.com/envy-ai/ComfyUI-DPMpp-2M-Sharp)** - the DPM++ 2M Sharp family ported here
 - **[RES4LYF](https://github.com/ClashLuke/DrChaos_Diffusers_Backend)** - original source of the RES4LYF trunks ported here
 - **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** - reference for upstream sampler/scheduler coverage
 - **[k-diffusion](https://github.com/crowsonkb/k-diffusion)** - the sampler maths this project builds on

@@ -1,4 +1,4 @@
-"""PROJECT INVISIBLE - SamplerScheduler: shared plumbing.
+﻿"""PROJECT INVISIBLE - SamplerScheduler: shared plumbing.
 
 This package is deliberately loaded under a *unique* module name
 (``pi_samplerscheduler_lib``) by ``scripts/engine.py`` instead of being put on
@@ -27,7 +27,7 @@ from typing import Any
 # --------------------------------------------------------------------------
 NAME = "PROJECT INVISIBLE - SamplerScheduler"
 SHORT = "Invisible-SS"
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 
 #: Extension root, i.e. ``extensions/project-invisible-samplerscheduler``.
 EXT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

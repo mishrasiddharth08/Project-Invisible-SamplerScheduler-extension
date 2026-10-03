@@ -116,3 +116,19 @@ code removed, open an issue and it will be handled promptly.
 
 1.1.0 additions: lib/wrappers/comfy_latest.py uses ComfyUI 1d48d9cf7bcecb6022a87b3cb13e0fb435bf9b8a
 (GPL-3.0). Host adaptations and retained coefficients are described in docs/UPSTREAM.md.
+
+--------------------------------------------------------------------------------
+7. ComfyUI-DPMpp-2M-Sharp (envy-ai)
+--------------------------------------------------------------------------------
+   Upstream : https://github.com/envy-ai/ComfyUI-DPMpp-2M-Sharp
+   File     : lib/wrappers/dpmpp_sharp.py
+   Provides : DPM++ 2M Sharp, DPM++ 2M SDE GPU Sharp, SEEDS 2 Sharp, and the
+               bundled RES 2S/2M no-correction (and Sharp) paths
+               (RES 2S NC, RES 2M NC, RES 2S NC Sharp, RES 2M NC Sharp).
+
+   The sampler maths is verbatim; three ComfyUI host-API touch points were
+   swapped for this extension's existing helpers (documented in the module
+   header). The bundled RES 2S/2M paths are upstream's extraction from RES4LYF
+   (commit 5e72fe3) and carry the upstream RES4LYF licence terms; see
+   LICENSE.RES4LYF shipped with the upstream repository and the RES4LYF entry
+   above for the applicable restriction.
