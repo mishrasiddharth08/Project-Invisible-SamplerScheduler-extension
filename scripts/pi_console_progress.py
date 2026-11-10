@@ -14,6 +14,7 @@ def _watch(shared):
     original = state_class.__setattr__
     had_setter = "__setattr__" in vars(state_class)
     bar = None
+    covered = False
 
     def close():
         nonlocal bar
@@ -22,15 +23,17 @@ def _watch(shared):
             active.close()
 
     def update(state, name, previous, value):
-        nonlocal bar
+        nonlocal bar, covered
         if name == "job":
             if previous != value:
                 close()
+                covered = False
             return
         if value <= 0 or value < previous:
             close()
+            covered = False
         if (value <= 0 or value == previous or not state.job
-                or shared.cmd_opts.disable_console_progressbars):
+                or covered or shared.cmd_opts.disable_console_progressbars):
             return
         total = state.sampling_steps
         if total <= 0:
@@ -45,6 +48,7 @@ def _watch(shared):
             )
         if other_bar:
             close()
+            covered = True
             return
         if bar is None:
             bar = tqdm(total=total, desc="Sampling", file=shared.progress_print_out,

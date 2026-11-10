@@ -40,7 +40,11 @@ class ConsoleProgressTests(TestCase):
         with tqdm(total=4, desc="Native", file=self.console) as native:
             self.state.sampling_step = 1
             native.update()
+        self.state.sampling_step = 4
         self.assertNotIn("Sampling:", self.console.getvalue())
+        self.state.sampling_step = 0
+        self.state.sampling_step = 1
+        self.assertIn("Sampling:", self.console.getvalue())
 
     def test_console_disable_is_respected(self):
         self.shared.cmd_opts.disable_console_progressbars = True
